@@ -1,0 +1,14 @@
+prefix=hdf5/HDF_Group/HDF5/1.12.1
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: hdf5
+Description: HDF5 (Hierarchical Data Format 5) Software Library
+Version: 1.12.1
+
+Cflags: -I${includedir}
+Libs: -L${libdir} 
+Requires: 
+Libs.private:  -lm -ldl -l/home/brian/dev/emsdk/upstream/emscripten/cache/sysroot/lib/wasm32-emscripten/libz.a  -lhdf5
+Requires.private: 
